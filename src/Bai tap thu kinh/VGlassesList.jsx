@@ -5,7 +5,12 @@ class VGlassesList extends Component {
     //  console.log(item)
     return (
       <div>
-        <div className="item" onClick={()=>{handleGlass(item)}}>
+        <div
+          className="item"
+          onClick={() => {
+            handleGlass(item);
+          }}
+        >
           <a>
             <img className="img-fluid" src={item.url} alt={item.url} />
           </a>

@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-
 class ClickGlass extends Component {
   render() {
-    const { glass } = this.props;
+    const { glass,display } = this.props;
     return (
       <>
         <div className="col-5 vglasses__right p-0">
@@ -21,9 +20,9 @@ class ClickGlass extends Component {
                 );
               })}
             </div>
-            <div id="glassesInfo" className="vglasses__info" style={{display:"none"}}>
+            <div id="glassesInfo" className="vglasses__info" style={{display:display}}>
               {glass.map((item, index) => {
-                console.log(item)
+                // console.log(item)
                 return (
                   <div key={index}>
                     <div className="d-flex align-items-center">
